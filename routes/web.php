@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get('/hello', 'UserController@sample');
 Route::post('storeUser', 'UserController@store');
+
+Route::get('/task', 'TaskController@index');
+Route::post('/task', 'TaskController@store');
